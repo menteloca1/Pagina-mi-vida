@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Galería</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<h2 style="text-align: left;">En la plaza ❤️</h2>
+    <div class="galeria">
+
+        <img class="imagen" src="img/img1.webp" onclick="abrirImagen(this)">
+
+        <img class="imagen" src="img/img2.jpg" onclick="abrirImagen(this)">
+
+        <img class="imagen" src="img/img3.jpg" onclick="abrirImagen(this)">
+
+        <img class="imagen" src="img/img6.jpg" onclick="abrirImagen(this)">
+
+        <img class="imagen" src="img/img7.jpg" onclick="abrirImagen(this)">
+
+        <img class="imagen" src="img/img8.jpg" onclick="abrirImagen(this)">
+
+        <img class="imagen" src="img/img9.jpg" onclick="abrirImagen(this)">
+
+        <img class="imagen" src="img/img10.jpg" onclick="abrirImagen(this)">
+
+        <img class="imagen" src="img/img11.jpg" onclick="abrirImagen(this)">
+
+        <img class="imagen" src="img/img12.jpg" onclick="abrirImagen(this)">
+
+        <img class="imagen" src="img/img13.jpg" onclick="abrirImagen(this)">
+
+        <img class="imagen" src="img/img14.jpg" onclick="abrirImagen(this)">
+
+        <img class="imagen" src="img/img15.jpg" onclick="abrirImagen(this)">
+
+        <img class="imagen" src="img/img16.jpg" onclick="abrirImagen(this)">
+        
+    </div>
+
+    
+<h2 style="text-align: center;">MI FOTO FAVORITA 💕</h2>
+<div class="galeria"
+style= "display: flex; justify-content: center;">
+        <img class="imagen"  src="img/img40.jpg" onclick="abrirImagen(this)"
+        style="width: 600px; height: auto;">
+    </div>
+
+<h2 style="text-align: left;">De Paseo 💕</h2>
+<div class="galeria">
+
+     <img class="imagen" src="img/img20.jpg" onclick="abrirImagen(this)">
+
+        <img class="imagen" src="img/img21.jpg" onclick="abrirImagen(this)">
+
+        <img class="imagen" src="img/img23.jpg" onclick="abrirImagen(this)">
+
+        <img class="imagen" src="img/img24.jpg" onclick="abrirImagen(this)">
+
+        <img class="imagen" src="img/img25.jpg" onclick="abrirImagen(this)">
+
+        <img class="imagen" src="img/img26.jpg" onclick="abrirImagen(this)">
+
+        <img class="imagen" src="img/img27.jpg" onclick="abrirImagen(this)">
+
+        <img class="imagen" src="img/img28.jpg" onclick="abrirImagen(this)">
+
+        <img class="imagen" src="img/img29.jpg" onclick="abrirImagen(this)">
+
+        <img class="imagen" src="img/img30.jpg" onclick="abrirImagen(this)">
+
+        <img class="imagen" src="img/img31.jpg" onclick="abrirImagen(this)">
+
+        <img class="imagen" src="img/img32.jpg" onclick="abrirImagen(this)">
+
+        <img class="imagen" src="img/img33.jpg" onclick="abrirImagen(this)">
+
+        <img class="imagen" src="img/img34.jpg" onclick="abrirImagen(this)">
+
+    </div>
+
+    <div id="visor" onclick="cerrarImagen()">
+
+        <img id="imagenGrande">
+
+    </div>
+
+    <script>
+
+function abrirImagen(img){
+
+    document.getElementById("visor")
+    .style.display = "flex";
+
+    document.getElementById("imagenGrande")
+    .src = img.src;
+}
+
+function cerrarImagen(){
+
+    document.getElementById("visor")
+    .style.display = "none";
+}
+
+</script>
+</body>
+
+</html>

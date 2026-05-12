@@ -1,0 +1,737 @@
+body {
+
+    text-align: center;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background:
+    linear-gradient(
+        135deg,
+        #ffd6e0,
+        #fff1f5
+    );
+
+    color: #333;
+
+    padding: 20px;
+
+    overflow-x: hidden;
+
+    margin: 0;
+
+    animation: aparecerPagina 1s ease;
+}
+
+
+h1 {
+    color: #e0aaff;
+}
+
+h2 {
+    color: #e0aaff;
+}
+
+p {
+    color:#e0aaff
+}
+
+li {
+    color:#e0aaff
+}
+
+#inicio {
+
+    height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+/* GALERIA */
+
+.galeria{
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
+
+    padding: 40px;
+}
+
+.galeria img{
+
+    width: 100%;
+
+    height: 450px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.galeria img:hover{
+
+    transform: scale(1.05);
+}
+/* IMAGENES */
+
+.imagen{
+
+    width: 0%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+    animation: aparecer 1s ease;
+
+    cursor: pointer;
+
+}
+
+.imagen:hover{
+
+    transform: scale(1.05);
+}
+
+.imag {
+
+    width: 400px;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    transition: transform 0.3s;
+
+
+}
+
+
+/* CARTA */
+
+.carta {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    width: 70%;
+
+    margin: auto;
+
+    margin-top: 40px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+summary {
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    color: #f3d1ff;
+
+    cursor: pointer;
+}
+
+.carta p {
+
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+/* RAZONES */
+
+.razones {
+
+    margin-top: 40px;
+}
+
+.razones ul {
+
+    list-style: none;
+
+    padding: 0;
+}
+
+.razones li {
+
+    margin: 10px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+#extraRazones{
+
+    display: none;
+}
+
+/* BOTONES */
+
+.boton,
+
+.sorpresa-btn {
+
+    display: inline-block;
+
+    background: #ff4d88;
+
+    color: white;
+
+    border: none;
+
+    padding: 15px 25px;
+
+    font-size: 18px;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    text-decoration: none;
+
+    margin-top: 20px;
+}
+
+.boton:hover,
+
+.sorpresa-btn:hover {
+
+    transform: scale(1.08);
+}
+
+/* MENSAJE SORPRESA */
+
+#mensajeSorpresa {
+
+    color: #f3d1ff;
+
+    margin-top: 20px;
+
+    font-size: 22px;
+}
+
+/* FOTO SORPRESA */
+
+#fotoSorpresa {
+
+    width: 250px;
+
+    border-radius: 20px;
+
+    margin-top: 20px;
+}
+
+/* CORAZONES DE FONDO */
+
+.corazones span {
+
+    position: fixed;
+
+    bottom: -50px;
+
+    font-size: 30px;
+
+    animation: subir linear infinite;
+}
+
+.corazones span:nth-child(1) {
+
+    left: 10%;
+
+    animation-duration: 8s;
+}
+
+.corazones span:nth-child(2) {
+
+    left: 30%;
+
+    animation-duration: 12s;
+}
+
+.corazones span:nth-child(3) {
+
+    left: 50%;
+
+    animation-duration: 9s;
+}
+
+.corazones span:nth-child(4) {
+
+    left: 70%;
+
+    animation-duration: 11s;
+}
+
+.corazones span:nth-child(5) {
+
+    left: 90%;
+
+    animation-duration: 7s;
+}
+
+/* ANIMACION CORAZONES */
+
+@keyframes subir {
+
+    0% {
+
+        transform: translateY(0);
+
+        opacity: 1;
+    }
+
+    100% {
+
+        transform: translateY(-120vh);
+
+        opacity: 0;
+    }
+}
+
+/* CORAZONES DEL BOTON */
+
+.corazon {
+
+    position: fixed;
+
+    top: -20px;
+
+    font-size: 30px;
+
+    animation: caer linear forwards;
+}
+
+@keyframes caer {
+
+    to {
+
+        transform: translateY(110vh);
+
+        opacity: 0;
+    }
+}
+
+/* CONTENEDOR */
+
+.contenedor-carta{
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 60px;
+
+    cursor: pointer;
+}
+
+/* SOBRE */
+
+.sobre{
+
+    position: relative;
+
+    width: 500px;
+
+    height: 320px;
+
+    background: #ff8fab;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* TAPA */
+
+.tapa{
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 0;
+
+    height: 0;
+
+    border-left: 250px solid transparent;
+
+    border-right: 250px solid transparent;
+
+    border-top: 170px solid #ff5d8f;
+
+    z-index: 3;
+}
+
+/* CORAZON */
+
+.corazon{
+
+    position: absolute;
+
+    top: 90px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 35px;
+
+    z-index: 4;
+}
+
+/* PAPEL */
+
+.papel{
+
+    position: absolute;
+
+    width: 85%;
+
+    height: 260px;
+
+    background: white;
+
+    left: 50%;
+
+    bottom: -320px;
+
+    transform: translateX(-50%);
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    transition: 0.7s;
+
+    z-index: 2;
+
+    overflow-y: auto;
+}
+
+/* CUANDO SE ABRE */
+
+.papel.abrir{
+
+    bottom: 40px;
+}
+
+/* TEXTO */
+
+.papel h2{
+
+    color: #f3d1ff;
+
+    margin-bottom: 10px;
+}
+
+.papel p{
+
+    font-size: 15px;
+
+    line-height: 1.5;
+}
+
+/* ANIMACION TAPA */
+
+.tapa{
+
+    transition: 0.6s;
+    
+    transform-origin: top;
+}
+
+/* CUANDO ABRE */
+
+.tapa.abrir-tapa{
+
+    transform: rotateX(180deg);
+
+    z-index: 0;
+}
+
+@keyframes aparecer{
+
+    from{
+
+        opacity: 0;
+
+        transform: translateY(20px);
+    }
+
+    to{
+
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+
+#visor{
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: rgba(0,0,0,0.8);
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 999;
+}
+
+/* IMAGEN GRANDE */
+
+#imagenGrande{
+
+    max-width: 80%;
+
+    max-height: 80%;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px rgba(255,255,255,0.2);
+
+    animation: zoom 0.3s ease;
+}
+
+/* ANIMACION */
+
+@keyframes zoom{
+
+    from{
+
+        transform: scale(0.7);
+
+        opacity: 0;
+    }
+
+    to{
+
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
+
+@keyframes aparecerPagina{
+
+    from{
+
+        opacity: 0;
+    }
+
+    to{
+
+        opacity: 1;
+    }
+}
+
+/* FONDO MORADO */
+
+body{
+
+    background:
+    linear-gradient(
+        135deg,
+        #5b2a86,
+        #9d4edd,
+        #e0aaff
+    );
+
+    overflow-x: hidden;
+}
+
+/* FLORES */
+
+.flores span{
+
+    position: fixed;
+
+    bottom: -50px;
+
+    font-size: 35px;
+
+    animation: flotar 10s linear infinite;
+
+    opacity: 0.8;
+}
+
+/* POSICIONES */
+
+.flores span:nth-child(1){
+
+    left: 10%;
+
+    animation-duration: 8s;
+}
+
+.flores span:nth-child(2){
+
+    left: 30%;
+
+    animation-duration: 12s;
+}
+
+.flores span:nth-child(3){
+
+    left: 50%;
+
+    animation-duration: 10s;
+}
+
+.flores span:nth-child(4){
+
+    left: 70%;
+
+    animation-duration: 9s;
+}
+
+.flores span:nth-child(5){
+
+    left: 90%;
+
+    animation-duration: 11s;
+}
+
+/* ANIMACION */
+
+@keyframes flotar{
+
+    0%{
+
+        transform:
+        translateY(0)
+        rotate(0deg);
+
+        opacity: 0;
+    }
+
+    20%{
+
+        opacity: 1;
+    }
+
+    100%{
+
+        transform:
+        translateY(-120vh)
+        rotate(360deg);
+
+        opacity: 0;
+    }
+}
+
+.contador-box{
+
+    margin: 40px auto;
+
+    padding: 25px;
+
+    width: fit-content;
+
+    background: rgba(255,255,255,0.1);
+
+    border: 2px solid #e0aaff;
+
+    border-radius: 25px;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+    0 0 20px rgba(224,170,255,0.4);
+
+    animation: latido 2s infinite;
+}
+
+/* TEXTO */
+
+#contador{
+
+    color: #ffffff;
+
+    font-size: 35px;
+
+    margin: 0;
+
+    text-shadow:
+    0 0 10px rgba(255,255,255,0.7);
+}
+
+/* EFECTO */
+
+@keyframes latido{
+
+    0%{
+
+        transform: scale(1);
+    }
+
+    50%{
+
+        transform: scale(1.03);
+    }
+
+    100%{
+
+        transform: scale(1);
+    }
+}
+
+.amo-section{
+
+    margin-top: 60px;
+}
+
+.amo-section h2{
+
+    color: #f3d1ff;
+
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}

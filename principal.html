@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Para mi Amor ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1>¡Hola, mi estrellita! ❤️</h1>
+
+    <p>Te adoro con mi alma mi niña ✨</p>
+
+
+    <!-- CARTA -->
+
+    <div class="contenedor-carta" onclick="abrirCarta()">
+
+        <div class="sobre">
+
+            <div class="tapa"></div>
+
+            <div class="corazon">❤️</div>
+
+            <div class="papel" id="papel">
+
+                <h2>Para ti mi princesa❤️</h2>
+
+                <p>
+                     Mi niña, eres la mejor persona de este universo es imposible no amarte,
+                    cada día a tu lado es un regalo que valoro con todo mi corazón
+                    A pesar de que no puedo verte todos los dias o siempre, aun asi presiento todo tu amor,
+                    es increible lo que me haces sentir.
+                    Cada dia me enamoro mas de ti, de tu forma de ser, de cuidarme, de protegerme.
+                    Cuando estoy a tu lado no quiero que pase el tiempo, las horas, solo quiero seguir a tu lado en confianza y tranquilo,
+                    me haces sentir muy tranquilo, muy lindo, es algo inexplicable lo que siento por ti, es algo tan hermoso, tan puro, tan sincero, tan real, tan fuerte, tan intenso, tan profundo, tan magico, tan unico, tan especial, tan maravilloso, tan perfecto, tan dulce, tan tierno, tan apasionado, tan romantico, tan divertido, tan loco, tan genial, tan increible, tan maravilloso como tu mi niña hermosa 💖
+                    <br><br>
+                    Estoy tan orgulloso de ti mi vida, de tu esfuerzo, tu fuerza, tu personalidad, 
+                    tu inteligencia, tu belleza. De verdad que me encantas, te admiro demasiado y 
+                    me siento tan afortunado de tenerte a mi lado, de crear esta hermosa historia de amor que le contaremos a nuestros hijos e hijas, Soy el hombre mas feliz a tu lado 💜
+                    <br><br>
+                    Gracias por siempre estar a mi lado y hacerme el hombre mas feliz del mundo, gracias por el amor que me das,
+                    por tu paciencia, por darme tu tiempo, por darme tu confianza, y por ser tan fuerte para aguantar mis locuras.
+                    Eres en simples palabras PERFECCION<br>
+                    Eres lo mas hermoso que me ha pasado en la vida y deseo y anhelo tenerte por siempre y para siempre.
+                    <br><br>
+
+                    TE AMO MI PUCCA..😍
+
+            </div>
+
+        </div>
+
+    </div>
+    <a href="galeria.html" class="boton">
+
+        Recuerdos 📸
+
+    </a>
+
+    <!-- RAZONES -->
+
+    <div class="razones">
+
+        <h2>Razones por las que te amo ❤️</h2>
+
+        <ul id="listaRazones">
+
+            <li>Porque amo tu sonrisa ✨</li>
+
+            <li>Porque me encantan tus hermosos ojos 😍</li>
+
+            <li>Porque contigo soy feliz 💖</li>
+
+            <!-- OCULTAS -->
+
+            <div id="extraRazones">
+
+                <li>Porque haces mis días mejores ❤️</li>
+
+                <li>Porque amo escucharte ❤️</li>
+
+                <li>Porque siempre pienso en ti ✨</li>
+
+                <li>Porque eres mi lugar seguro 💕</li>
+
+                <li>Porque me encantan tus abrazos ❤️</li>
+
+                <li>Porque simplemente eres tú 💖</li>
+
+            </div>
+
+        </ul>
+
+        <button id="btnRazones" class="sorpresa-btn" onclick="verMas()">
+
+            Ver más ❤️
+
+        </button>
+    </div>
+
+    <!-- BOTON MUSICA -->
+
+    <a href="https://www.youtube.com/watch?v=ezoAXKk-Dw8" target="_blank" rel="noopener noreferrer" class="boton">
+
+        Escucha mi vida 🎵
+
+    </a>
+
+    <!-- CONTADOR -->
+
+    <div class="contador-box">
+
+        <h2 id="contador"></h2>
+
+    </div>
+
+    <!-- BOTON SORPRESA -->
+<div class="amo-section"> 
+    <h2>Cosas que amo de ti 🌷</h2>
+    <button class="sorpresa-btn" onclick="sorpresa()">
+
+        Presióname ❤️
+
+    </button>
+
+    <h2 id="mensajeSorpresa"></h2>
+
+
+    <!-- CORAZONES -->
+
+    <div class="corazones">
+
+        <span>❤️</span>
+
+        <span>💖</span>
+
+        <span>💕</span>
+
+        <span>❤️</span>
+
+        <span>💘</span>
+
+        <span>🌷</span>
+
+        <span>💜</span>
+
+        <span>🌷</span>
+
+        <span>🌷</span>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        // CONTADOR
+
+        const fechaInicio = new Date("2022-10-09");
+
+        function actualizarContador() {
+
+            const hoy = new Date();
+
+            const diferencia = hoy - fechaInicio;
+
+            const dias = Math.floor(
+                diferencia / (1000 * 60 * 60 * 24)
+            );
+
+            document.getElementById("contador").innerHTML =
+                "Llevamos " + dias + " días juntos ❤️";
+        }
+
+        actualizarContador();
+
+        // BOTON SORPRESA
+
+
+
+function sorpresa(){
+
+    const mensajes = [
+
+        "Amo tus ojitos❤️",
+
+        "Amo la tranquilidad que me das❤️",
+
+        "Amo escuchar tu voz ✨",
+
+        "Amo tu manera de hacerme sentir amado 💜",
+
+        "Amo cada momento a tu lado 🌷",
+
+        "Amo tu personalidad ❤️",
+
+        "Amo reir a tu lado ✨",
+
+        "Amo que existas 💖",
+
+        "Amo simplemente estar contigo 🌙",
+
+        "Amo compartir momentos a tu lado ✨",
+
+        "Amo crear una hermosa historia con usted 💖",
+
+        "Amo comó haces que el tiempo pase rapido a tu lado ⏳"
+    ];
+
+    const random = Math.floor(
+        Math.random() * mensajes.length
+    );
+
+    document.getElementById(
+        "mensajeSorpresa"
+    ).innerHTML = mensajes[random];
+
+    // CORAZONES
+
+    for(let i = 0; i < 3; i++){
+
+        let corazon =
+        document.createElement("span");
+
+        corazon.innerHTML = "💜";
+
+        corazon.classList.add("corazon");
+
+        corazon.style.left =
+        Math.random() * 100 + "vw";
+
+        corazon.style.animationDuration =
+        (Math.random() * 3 + 2) + "s";
+
+        document.body.appendChild(corazon);
+
+        setTimeout(() => {
+
+            corazon.remove();
+
+        }, 5000);
+    }
+}
+
+
+
+
+
+
+        function abrirCarta() {
+
+            document
+                .getElementById("papel")
+                .classList.toggle("abrir");
+
+            document
+                .querySelector(".tapa")
+                .classList.toggle("abrir-tapa");
+        }
+
+
+    </script>
+
+    <script>
+
+        function verMas() {
+
+            const extra =
+                document.getElementById("extraRazones");
+
+            const boton =
+                document.getElementById("btnRazones");
+
+            if (extra.style.display === "block") {
+
+                extra.style.display = "none";
+
+                boton.innerHTML = "Ver más ❤️";
+            }
+
+            else {
+
+                extra.style.display = "block";
+
+                boton.innerHTML = "Ver menos 💜";
+            }
+        }
+
+    </script>
+</body>
+
+
+
+
+</html>
